@@ -1,0 +1,21 @@
+<div class="form-left-col" xmlns="http://java.sun.com/jsf/html">
+    <inputHidden id="id" name="id" type="text" value="<%= id %>" disabled />
+
+    <label>Title:</label>
+    <input type="text" id="title" name="title" value="<%= title %>" required/>
+
+    <label>Year:</label>
+    <input type="text" id="year" name="year"  value="<%= year %>"/>
+
+    <label>Genres:</label>
+    <input type="text" id="genres" name="genres"  value="<%= genres %>"/>
+
+    <button class="save">Save</button>
+    <button class="delete">Delete</button>
+</div>
+
+<div class="form-right-col">
+    <img height="300" src="pics/<%= picture %>"/>
+    <label>Notes:</label>
+    <textarea id="description" name="description"><%= description %></textarea>
+</div>
